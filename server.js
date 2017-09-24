@@ -12,6 +12,22 @@ app.get('/api/users', function(req, res) {
     res.send(user_id + ' ' + token + ' ' + geo);
 });
 
+// Get new dishwasher id
+// Get status of dishwasher
+// Set status of dishwasher
+
+// Get status of dishwasher pseudocode
+// 1. Open app
+// 2. Check for stored dishwasher ID
+// 3. If no dishwasher ID
+//      Do you want to create a new dishwasher ID? 
+//          Yes - Create new dishwasher ID from server
+//          No - type in dishwasher ID, store locally
+// 4. Using new dishwasher ID or stored old dishwasher ID,
+//    run GetStatusOfDishwasher from server, passing dishwasher
+//    ID as parameter in function call
+// 5. Display status
+
 // start the node server
 app.listen(port); 
 console.log('Server started at: ' + port);
