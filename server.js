@@ -20,10 +20,41 @@ app.get('/api/users', function(req, res) {
 //          model,
 //          estimated wash time,
 //      }
+app.get('/api/house', function(req, res) {
+    // Math.random should be unique because of its seeding algorithm.
+    // Convert it to base 36 (numbers + letters), and grab the first 9 characters
+    // after the decimal.
+    // Just remember we borrowed this from GitHub...somewhere.
+    var houseId = Math.random().toString(36).substr(2, 9);
+
+    // TODO - check to make sure this doesn't already exist in the database
+
+    res.send(houseId);
+});
 
 //-- Get Dishwasher --//
+// Get status of dishwasher
+app.param('house', function(req, res, next, house) {
+    // Add some stuff here to make sure that thing actually exists
+    req.status = 'I don\'t know what you\'re talking about.'
+    if(house === 'psyem6zlm')
+        req.status = 'active'
+    next();
+})
+app.get('/api/:house', function(req, res) {
+    res.send(req.status);
+})
+
 //-- Update Dishwasher Info --//
 //-- Toggle Dishwasher State --//
+app.get('/api/:house/:dishwasher/toggle', function(req, res) {
+    var currentStatus = req.status
+    if(currentStatus === 'inactive')
+        currentStatus = 'active'
+    else if(currentStatus === 'active')
+        currentStatus = 'inactive'
+    res.send(currentStatus);
+})
 
 //-- Create User --//
 //      User:
@@ -64,12 +95,8 @@ app.get('/api/users', function(req, res) {
 //              No - Can't progress in app. Wait for user to decide 'yes'  .      
 // 3. Check for stored dishwasher ID.
 // 4. If no dishwasher ID.
-//      Do you want to create a new dishwasher ID? 
-//          Yes - Create new dishwasher ID from server.
-//          No - Main Menu will be empty :(
-// 5. Get Dishwasher by ID from server.
-// 6. Display status
 
 // start the node server
 app.listen(port); 
 console.log('Server started at: ' + port);
+
