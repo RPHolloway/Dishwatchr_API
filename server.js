@@ -13,7 +13,23 @@ app.get('/api/users', function(req, res) {
 });
 
 // Get new dishwasher id
+// Just remember we borrowed this from GitHub...somewhere.
+var ID = function () {
+    // Math.random should be unique because of its seeding algorithm.
+    // Convert it to base 36 (numbers + letters), and grab the first 9 characters
+    // after the decimal.
+    return Math.random().toString(36).substr(2, 9);
+};
+// Actual route
+app.get('/api/house', function(req, res) {
+    var username = ID();
+    res.send(username);
+});
+
 // Get status of dishwasher
+// JSON definition
+
+
 // Set status of dishwasher
 
 // Get status of dishwasher pseudocode
@@ -31,3 +47,4 @@ app.get('/api/users', function(req, res) {
 // start the node server
 app.listen(port); 
 console.log('Server started at: ' + port);
+
