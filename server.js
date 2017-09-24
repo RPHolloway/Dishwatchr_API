@@ -22,15 +22,37 @@ var ID = function () {
 };
 // Actual route
 app.get('/api/house', function(req, res) {
+    // WAIT - check to make sure this doesn't already exist in the database
     var username = ID();
     res.send(username);
 });
 
 // Get status of dishwasher
 // JSON definition
+// Code (String): psyem6zlm
+// Status (String): Clean/Dirty 
+app.param('house', function(req, res, next, house) {
+    // Add some stuff here to make sure that thing actually exists
+    req.status = 'I don\'t know what you\'re talking about.'
+    if(house === 'psyem6zlm')
+        req.status = 'active'
+    next();
+})
 
+app.get('/api/:house', function(req, res) {
+    res.send(req.status);
+})
 
-// Set status of dishwasher
+// Toggle status of dishwasher
+app.get('/api/:house/:dishwasher/toggle', function(req, res) {
+    // 
+    var currentStatus = req.status
+    if(currentStatus === 'inactive')
+        currentStatus = 'active'
+    else if(currentStatus === 'active')
+        currentStatus = 'inactive'
+    res.send(currentStatus);
+})
 
 // Get status of dishwasher pseudocode
 // 1. Open app
