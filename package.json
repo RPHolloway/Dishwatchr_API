@@ -5,7 +5,12 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "clean-dishwasher": "node dishwasher.js",
+    "clean-user": "node user.js",
+    "clean-house": "node house.js",
+    "clean-house_user_bridge": "node house_user_bridge.js",
+    "clean-all": "node dishwasher.js && node user.js && node house.js && node house_user_bridge.js"
   },
   "author": "Hugh Dillon & Rick Holloway",
   "license": "MIT",
@@ -14,6 +19,7 @@
     "nodemon": "^1.12.1"
   },
   "dependencies": {
+    "aws-sdk": "^2.122.0",
     "body-parser": "^1.18.2",
     "express": "^4.15.4"
   }
