@@ -11,6 +11,11 @@ h2, p, .dw-text-clean, .dw-text-dirty, .dw-text-second-row {
 p {
   font-size: 40%; }
 
+i {
+  color: #f0f7ee;
+  margin-right: 5%;
+  margin-left: 5%; }
+
 .dw-text-clean, .dw-text-dirty {
   font-size: 100%; }
 
@@ -23,6 +28,12 @@ p {
   height: 35%;
   margin-left: auto;
   margin-right: auto; }
+
+.dw-icons-footer {
+  width: 16%;
+  margin-left: 43%;
+  margin-right: auto;
+  margin-top: 6%; }
 
 .dw-logo {
   display: block;
