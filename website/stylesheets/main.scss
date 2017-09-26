@@ -6,6 +6,60 @@ $dw-light: #f0f7ee;
 $dw-red: #e54b4b;
 $dw-blue: #4f7cac;
 
+// Font variables
+$raleway: 'Raleway', sans-serif;
+
 body {
-    background-color: $dw-red;
+    background-color: $dw-bright;
+}
+
+h2 {
+   font-family: $raleway;
+   color: $dw-light;
+   line-height: 135%;
+   font-weight: 200;
+   font-size: 250%;
+}
+
+p {
+    @extend h2;
+    font-size: 40%;
+}
+
+.dw-text-clean {
+    @extend h2;
+    font-size: 100%;
+}
+
+.dw-text-dirty {
+    @extend .dw-text-clean;
+}
+
+.dw-text-second-row {
+    @extend h2;
+    font-size: 96%;
+}
+
+.dw-logo-container {
+    margin-top: 8%;
+    width: 50%;
+    height: 35%;
+    margin-left:  auto;
+    margin-right: auto;
+}
+
+// SVG guidelines and styling: https://css-tricks.com/scale-svg/
+.dw-logo { 
+   display: block;
+   height: 100%;
+   margin-left:  auto;
+   margin-right: auto;
+}
+
+#dw-desc-text-container {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
 }

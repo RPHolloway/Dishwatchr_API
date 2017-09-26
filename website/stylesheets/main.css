@@ -1,4 +1,40 @@
 body {
-  background-color: #e54b4b; }
+  background-color: #6c969d; }
+
+h2, p, .dw-text-clean, .dw-text-dirty, .dw-text-second-row {
+  font-family: "Raleway", sans-serif;
+  color: #f0f7ee;
+  line-height: 135%;
+  font-weight: 200;
+  font-size: 250%; }
+
+p {
+  font-size: 40%; }
+
+.dw-text-clean, .dw-text-dirty {
+  font-size: 100%; }
+
+.dw-text-second-row {
+  font-size: 96%; }
+
+.dw-logo-container {
+  margin-top: 8%;
+  width: 50%;
+  height: 35%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.dw-logo {
+  display: block;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+#dw-desc-text-container {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%; }
 
 /*# sourceMappingURL=main.css.map */

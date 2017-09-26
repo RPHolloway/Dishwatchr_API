@@ -1,0 +1,36 @@
+<svg id="Dishwatchr_Logo" data-name="Dishwatchr Logo" xmlns="http://www.w3.org/2000/svg" width="750" height="653" viewBox="0 0 750 653">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #282b28;
+        stroke-width: 10px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #f0f7ee;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        font-size: 56px;
+        font-family: Raleway;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #f0f7ee;
+      }
+    </style>
+  </defs>
+  <path id="Polygon_8" data-name="Polygon 8" class="cls-1" d="M375,754L3.015,111h743.97Z" transform="translate(0 -106)"/>
+  <path id="Polygon_8_copy" data-name="Polygon 8 copy" class="cls-2" d="M375,715L38.014,133H711.986Z" transform="translate(0 -106)"/>
+  <text id="DISHWATCHR" class="cls-3" x="189" y="196">DISHWATCHR</text>
+  <rect id="Rectangle_1_copy" data-name="Rectangle 1 copy" class="cls-4" x="39" y="105" width="674" height="8"/>
+  <rect id="Rectangle_1_copy_2" data-name="Rectangle 1 copy 2" class="cls-4" x="39" y="240" width="674" height="8"/>
+  <rect id="Rectangle_1_copy_3" data-name="Rectangle 1 copy 3" class="cls-4" x="39" y="227" width="674" height="4"/>
+  <rect id="Rectangle_1_copy_4" data-name="Rectangle 1 copy 4" class="cls-4" x="39" y="122" width="674" height="4"/>
+</svg>
