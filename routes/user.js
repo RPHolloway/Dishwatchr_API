@@ -2,7 +2,7 @@ module.exports = function(app)
 {
     // require packages
     var AWS = require('aws-sdk')
-    var AmazonCognitoIdentity = require('../node_modules/aws-sdk/dist/amazon-cognito-identity.min.js')
+    var AmazonCognitoIdentity = require('../dist/amazon-cognito-identity.min.js')
     var config = require('config')
 
     var CognitoUserPool = AmazonCognitoIdentity.CognitoUserPool;
