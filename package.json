@@ -6,21 +6,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "clean-dishwasher": "node dishwasher.js",
-    "clean-user": "node user.js",
-    "clean-house": "node house.js",
-    "clean-house_user_bridge": "node house_user_bridge.js",
+    "clean-dishwasher": "node .\\dbscripts\\dishwasher.js",
+    "clean-user": "node .\\dbscripts\\user.js",
+    "clean-house": "node .\\dbscripts\\house.js",
+    "clean-house_user_bridge": "node .\\dbscripts\\house_user_bridge.js",
     "clean-all": "node dbscripts\\dishwasher.js && node dbscripts\\user.js && node dbscripts\\house.js && node dbscripts\\house_user_bridge.js"
   },
   "author": "Hugh Dillon & Rick Holloway",
   "license": "MIT",
   "devDependencies": {
     "express": "^4.15.4",
+    "json-loader": "^0.5.7",
     "nodemon": "^1.12.1"
   },
   "dependencies": {
-    "aws-sdk": "^2.122.0",
+    "aws-sdk": "^2.123.0",
     "body-parser": "^1.18.2",
+    "config": "^1.26.2",
     "express": "^4.15.4"
   }
 }

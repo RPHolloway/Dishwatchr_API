@@ -1,3 +1,5 @@
+global.navigator = () => null;
+
 // require packages
 var express = require('express');
 var bodyParser = require('body-parser');
@@ -39,4 +41,3 @@ router.use(function(req, res, next){
 // start the node server
 app.listen(port); 
 console.log('Server started at: ' + port);
-

@@ -11,6 +11,9 @@ pids
 *.seed
 *.pid.lock
 
+#AWS
+config/development.json
+
 #DynamoDB
 DynamoDBLocal.jar
 LICENSE.txt

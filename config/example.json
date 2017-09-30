@@ -1,0 +1,12 @@
+{
+    "AWS": {
+        "UserPool": {
+            "UserPoolId": "",
+            "ClientId": ""
+        },
+        "FederatedIdentity": {
+            "IdentityPoolId": "",
+            "LogInKey": ""
+        }
+    }
+}
